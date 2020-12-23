@@ -11,6 +11,12 @@ img { width: 100%; height: auto; display: block }
 /* Mobiles */
 @media (max-width:767px) { .container-block { padding: 12% 8% } }
 
+/* container for web page blocks */
+.container-block { 
+    border: solid 1px red;
+    padding: 50px 18% 50px 18%;
+ }
+
 
 /* Main heading */
 .container-block h1 {
@@ -65,5 +71,3 @@ img { width: 100%; height: auto; display: block }
 .bg-hero-block { background-color: #f5f9fb }
 .bg-pastel-1   { background-color: #BEC7B4 }
 .bg-pastel-2   { background-color: #DEE2D9 }
-
-
