@@ -45,8 +45,9 @@
 }
 
 
-body  {
-    background-color: #543c52}
+body  {height:100vh;
+  overflow:hidden;
+  background-image:linear-gradient(to bottom right, #543c52, #292028);}
     
     p {
       color:#f1e8e6;
@@ -117,7 +118,7 @@ body  {
         width:100%;
         position:fixed;
         bottom:0px;
-        background-color: #f55951;}
+        background-color: #543c52;}
 
 /**.jumbotron2 {height:40px;
 background-color: #f171a2;}
@@ -155,7 +156,7 @@ border: 20px solid #f55951;
 .container img { margin-bottom: 18px; }
 .col-md-3 img { margin-bottom: 14px;
 border-radius:5px;
-opacity:0.6;
+opacity:0.5;
 filter:grayscale(80)}
 
 /* Some image effects*/
