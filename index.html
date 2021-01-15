@@ -1,52 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natalia Polaszk | Home Page</title>
-    <meta name="description" content="Welcome to my website that showcases some of my digital creations.">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLDNX94ZBL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>Boostrap Template</title>
+    <meta name="description" content="A basic Bootstrap web page.">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">   
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css"> 
 
-  gtag('config', 'G-VLDNX94ZBL');
-</script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+      <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@602&family=Lobster&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
 </head>
 
+
 <body>
 
-    <h1>Welcome</h1>
-    <h2>Natalia Polaszk</h2>
+   
+   <div class="container all">
+      <div class="row header">
+         <div class="col-md-6">
+               <h1 class="fancy">fancy<br> project</h1>
+         </div>
+         <div class="col-md-6 description">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? <br><br>
+                  
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita numquam!<br><br>
 
-    <h3>Sample Web Pages</h3>
-    <p><a href="websites/page-1.html">A Tale of Two Cities</a></p>
-    <p><a href="websites/page-2.html">IBAT Chocolates</a></p>
-    <p><a href="websites/page-3.html">Prince & Purple Rain</a></p>
-    <p><a href="websites/page-4.html">Lorem Ipsum Text</a></p>
-    <p><a href="websites/lesson-3/page-5.html">Vincent van Gogh</a></p> 
-    <p><a href="websites/lesson-3/page-6.html">Irish Tourism</a></p> 
-    <p><a href="websites/lesson-3/page-7.html">Smoothies</a></p> 
-    <p><a href="websites/lesson-3/page-8.html">Software Analytics</a></p>     
-    <p><a href="websites/lesson-4/page-9.html">Web Page with Panels</a></p> 
-    <p><a href="websites/lesson-4/page-10.html">Web Page with Pastel Sections</a></p>
-    <p><a href="websites/lesson-4/page-11.html">Web Page with Dark Sections</a></p>
-    <p><a href="websites/lesson-4/page-12.html">Web Page with Alternating Sections</a></p>
+               Lorem ipsum dolor
+            </p>
+         </div>
+            
+      </div>
+   
+      
+     <div class="container lessons">
+        <div class="row">
+           <div class="col-md-3 basics">
+            <img src="assets/img/basics.png" class="img-fluid" alt="basics">
+              <div class="content">
+               <h2>basics</h2>
+                  <p><a href="websites/page-1.html">A Tale of Two Cities</a></p>
+                  <p><a href="websites/page-2.html">IBAT Chocolates</a></p>
+                  <p><a href="websites/page-3.html">Prince & Purple Rain</a></p>
+                  <p><a href="websites/page-4.html">Lorem Ipsum Text</a></p>   
+              </div>
+           </div>
+           <div class="col-md-3 lesson2">
+            <img src="assets/img/lesson2.png" class="img-fluid" alt="lesson2">
+               <div class="content">
+                  <h2>3</h2>
+                  <p><a href="websites/lesson-3/page-5.html">Vincent van Gogh</a></p> 
+                  <p><a href="websites/lesson-3/page-6.html">Irish Tourism</a></p> 
+                  <p><a href="websites/lesson-3/page-7.html">Smoothies</a></p> 
+                  <p><a href="websites/lesson-3/page-8.html">Software Analytics</a></p> 
+              </div> 
+           </div>
+           <div class="col-md-3 lesson3">
+            <img src="assets/img/lesson3.png" class="img-fluid" alt="lesson3">
+               <div class="content">
+                  <h2>4</h2>
+                  <p><a href="websites/lesson-4/page-9.html">Panels</a></p> 
+                  <p><a href="websites/lesson-4/page-10.html">Pastel Sections</a></p>
+                  <p><a href="websites/lesson-4/page-11.html">Dark Sections</a></p>
+                  <p><a href="websites/lesson-4/page-12.html">Alternating Sections</a></p>
+              </div>
+           </div>
+           <div class="col-md-3 bootstrap">
+            <img src="assets/img/bootstrap.png" class="img-fluid" alt="bootstrap">
+               <div class="content">
+                  <h2>bootstrap</h2>
+                  <p><a href="websites/bootstrap/bootstrap.html">Bootstrap basics</a></p> 
+                  <p><a href="websites/bootstrap/bootstrap-grid.html">Bootstrap grid</a></p>
+                  <p><a href="websites/bootstrap/bootstrap-practical-layouts.html">Bootstrap practical layouts</a></p>
+               </div>
+           </div>
+        </div>
+     </div> 
+   </div>
+     <div class="footer"></div>
 
-    <!-- Begin Inspectlet Asynchronous Code -->
-<script type="text/javascript">
-    (function() {
-    window.__insp = window.__insp || [];
-    __insp.push(['wid', 50770603]);
-    var ldinsp = function(){
-    if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=50770603&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
-    setTimeout(ldinsp, 0);
-    })();
-    </script>
-    <!-- End Inspectlet Asynchronous Code -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   
 </body>
+
+
 </html>
