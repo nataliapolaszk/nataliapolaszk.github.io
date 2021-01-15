@@ -2,7 +2,6 @@
 /* === Add vertical spacing to Bootstrap containers === */
 /* Desktops */
 @media (min-width:768px) {
-
   .header {
     height:70%;
     margin-top:20vh;
@@ -35,7 +34,8 @@
     }
 }   
     .col-md-3:hover > img {display:none}
-
+    .col-md-3:hover > .content h2 {color:#543c52!important;
+    transition:0.5s}
 
 /* Mobiles */
 @media (max-width:767px) { 
@@ -73,9 +73,9 @@ body  {
       transform: translate(-50%, -50%);
       font-family: 'Fraunces', serif;
       font-weight:bold;
-      color:#543c52;
-      background-color: #f1e8e6;
+      color:#e5c3ba
     }
+
 
     h1 {  
       line-height:calc(50px + (100 - 50) * ((100vw - 320px) /(1600 - 320)));}
