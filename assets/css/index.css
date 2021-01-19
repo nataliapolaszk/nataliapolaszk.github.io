@@ -3,6 +3,10 @@
 /* Desktops */
 
 @media (min-width:768px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
   .all {
     position: absolute;
     left: 0;
@@ -62,7 +66,7 @@
 }
 
 .col-md-3:hover>.content a {
-  color: #f1e8e6!important
+  color: #543c52!important
 }
 
 /* Mobiles */
@@ -83,8 +87,6 @@
 }
 
 body {
-  height: 100vh;
-  overflow: hidden;
   background-image: linear-gradient(to bottom right, #543c52, #292028);
 }
 
@@ -106,17 +108,19 @@ p {
 }
 
 .content a {
-  font-size: calc(8px + (18 - 8) * ((100vw - 320px) /(1600 - 320)));
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(8px + (14 - 8) * ((100vw - 320px) /(1600 - 320)));
   color: #6b5769;
   padding-bottom: 2px;
-  border-bottom: dotted 2px #f1e8e6;
+  border-bottom: dotted 2px #543c52;
+  font-weight:bold
 }
 
 .content a:hover {
   color: #f1e8e6;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: solid 2px #f1e8e6;
+  border-bottom: solid 2px #543c52;
 }
 
 h2 {
