@@ -1,103 +1,150 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boostrap Template</title>
-    <meta name="description" content="A basic Bootstrap web page.">   
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">   
-    <link rel="stylesheet" type="text/css" href="./assets/css/index.css"> 
+    <title>Natalia Polaszk | Web UI/UX Designer | Home Page</title>
+    <meta name="description" content="I create digital experiences to promote products, services and events.">
+    <!--
+    <meta name="description" content="I use HTML, CSS and JavaScript with graphic design and animation to bring your ideas to life.">
+    -->
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Customise Bootstrap for practical grid layouts -->
+    <link rel="stylesheet" href="assets/css/bootstrap-custom.css"> 
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">  
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="assets/css/global.css">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <!-- Link to icons for Font Awesome 5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@602&family=Lobster&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
-
+  
+    
 </head>
 
-
 <body>
-   <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          Logo
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#"><i class="fas fa-home"></i></a></li>
-          <li><a href="#">Page 1</a></li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
-        </ul>
-      </div>
-    </nav>
-   
-   <div class="container all">
-      <div class="row header">
-         <div class="col-md-6">
-               <h1 class="fancy">fancy<br> project</h1>
-         </div>
-         <div class="col-md-6 description">
-               <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit </h3>
-                  
-               <p>Nulla exercitationem ipsum enim natus soluta rem eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita numquam!<br><br>
 
-               Lorem ipsum dolor
-            </p>
-         </div>
+    <!-- Begin navbar -->
+    
+        <div class="sidenav">
+
+            <!-- Website logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/website-logo.png" width="200" height="40"  alt="Website logo">
+            </a>
+
+            <!-- Begin menu options -->
             
-      </div>
+                <ul class="nav flex-column">
+                   <li class="nav-item"><a class="nav-link" href="portfolio/">
+                        <div class="icon-container"><img src="assets/img/book-half.svg" alt="portfolio"></div>
+                        <p>Portfolio</p></a></li>
+                   <li class="nav-item"><a class="nav-link" href="javascript/">
+                        <div class="icon-container"><img src="assets/img/javascript-icon.svg" alt="javascript"></div>
+                        <p>JavaScript</p></a></li>
+                  <li class="nav-item"><a class="nav-link" href="wordpress/">
+                        <div class="icon-container"><img src="assets/img/wordpress-icon.svg" alt="wordpress"></div>
+                        <p>WordPress</p></a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact/">
+                        <div class="icon-container"><img src="assets/img/contact-icon.svg" alt="contact"></div>
+                        <p>Contact</p></a></li>
+                </ul>
+            </div>
+       
    
-      
-     <div class="container lessons">
-        <div class="row">
-           <div class="col-md-3 basics">
-            <img src="assets/img/basics.png" class="img-fluid" alt="basics">
-              <div class="content">
-               <h2>basics</h2>
-                  <p><a href="websites/page-1.html">A Tale of Two Cities</a></p>
-                  <p><a href="websites/page-2.html">IBAT Chocolates</a></p>
-                  <p><a href="websites/page-3.html">Prince & Purple Rain</a></p>
-                  <p><a href="websites/page-4.html">Lorem Ipsum Text</a></p>   
-              </div>
-           </div>
-           <div class="col-md-3 lesson2">
-            <img src="assets/img/lesson2.png" class="img-fluid" alt="lesson2">
-               <div class="content">
-                  <h2>3</h2>
-                  <p><a href="websites/lesson-3/page-5.html">Vincent van Gogh</a></p> 
-                  <p><a href="websites/lesson-3/page-6.html">Irish Tourism</a></p> 
-                  <p><a href="websites/lesson-3/page-7.html">Smoothies</a></p> 
-                  <p><a href="websites/lesson-3/page-8.html">Software Analytics</a></p> 
-              </div> 
-           </div>
-           <div class="col-md-3 lesson3">
-            <img src="assets/img/lesson3.png" class="img-fluid" alt="lesson3">
-               <div class="content">
-                  <h2>4</h2>
-                  <p><a href="websites/lesson-4/page-9.html">Panels</a></p> 
-                  <p><a href="websites/lesson-4/page-10.html">Pastel Sections</a></p>
-                  <p><a href="websites/lesson-4/page-11.html">Dark Sections</a></p>
-                  <p><a href="websites/lesson-4/page-12.html">Alternating Sections</a></p>
-              </div>
-           </div>
-           <div class="col-md-3 bootstrap">
-            <img src="assets/img/bootstrap.png" class="img-fluid" alt="bootstrap">
-               <div class="content">
-                  <h2>bootstrap</h2>
-                  <p><a href="bootstrap/bootstrap.html">Bootstrap basics</a></p> 
-                  <p><a href="bootstrap/bootstrap-grid.html">Bootstrap grid</a></p>
-                  <p><a href="bootstrap/bootstrap-practical-layouts.html">Bootstrap practical layouts</a></p>
-                  <p><a href="bootstrap/hero-images.html">Hero Block with BG Images</a></p>
-                  <p><a href="bootstrap/hero-video.html">Hero Block with BG Video </a></p>
-               </div>
-           </div>
-        </div>
-     </div> 
-   </div>
-     <div class="footer"></div>
+   <!-- End navbar -->
 
+    <div class="container-fluid hero-block hero-10">
+    
+        <!-- Background video --->
+        <video loop muted autoplay poster="assets/videos/hero-video-poster.jpg" class="background-video">
+                <source src="assets/videos/home-video.mp4" type="video/mp4">
+        </video>
+    
+        <!-- Optional overlay --->
+        <div class="bg-overlay"></div>
+
+        <!-- Hero block content --->
+        <div class="background-video-content">
+            <h1>Natalia Polaszk</h1>
+            <h2>Web UI/UX Designer</h2>
+      
+            <!-- Buttons start here -->
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <a class="btn btn-primary btn-lg" href="portfolio/" role="button"> &nbsp;&nbsp;Portfolio</a>
+                </div>	
+                <div class="col-md-6 col-xs-12">
+                    <a class="btn btn-primary btn-lg" href="contact/" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
+                </div>	
+            </div>
+            <!-- Buttons end here -->            
+        </div>
+	</div>
+
+    <div class="container introduction-text">
+
+        <h1>Recent projects</h1>
+
+        <p>Below you can see some examples of my recent work. Check out my complete <a href="portfolio/">portfolio</a> and my <a href="assets/pdfs/cv-sample.pdf">CV</a>.</p>
+        
+        <p>Have a project you'd like to discuss? <a href="contact/">Let's make something great together</a>.</p>
+    </div>
+
+    <!-- Begin footer-->
+    <footer class="container-fluid">
+
+        <h4>Natalia Polaszk: web designer</h4>
+        <h5>Excellence in digital creation</h5>
+
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio/">Portfolio</a></li>
+            <li><a href="contact/">Contact Form</a></li>
+        </ul>
+        
+
+        <ul class="footer-icons">
+            <li>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            
+         </ul>                
+        
+        <a class="privacy-legal" href="privacy.html">Privacy & Legal</a>
+    </footer>
+	<!-- End footer -->
+        
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Popper JS -->
@@ -105,23 +152,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": {
-            "background": "#000"
-          },
-          "button": {
-            "background": "#f1d600"
-          }
-        },
-        "content": {
-          "href": "https://nataliapolaszk.github.io/privacy.html"
-        }
-      });
-      </script>
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
 
 </body>
-
-
 </html>
