@@ -67,13 +67,21 @@ margin-bottom:5px}
 }
 .sidenav::before {
     content:'';
-    height:50px;
-    width:200px;
+    height:12px;
+    width:160px;
     position:absolute;
     left:0px;
-    top:1px;
+    top:-2px;
     background-color:#1ac0c6;
-    border-radius:0px 3px 3px 0px
+    border-radius:0px 3px 3px 0px;
+    z-index:0.5
+}
+.navbar-brand::before {content:'';
+height: 15px;
+width: 15px;
+    background-color:#1ac0c6;
+border-radius: 50%;
+position:absolute; left:5px; top:-3px;
 }
 .navbar-brand{
     position:absolute;
@@ -426,17 +434,19 @@ a.privacy-legal:hover {
     height: 480px;
     background: #ff6150;
     top: -6px;
-    left: 25px;
-    border-radius:10px 3px 0px 0px
+    left: 15px;
+    border-radius:10px 3px 0px 0px;
+    z-index:1
   }
   
   .ribbon-1:before {
     height: 0;
     width: 0;
-    border-bottom: 6px solid #ff6150;
-    border-right: 6px solid transparent;
+    border-bottom: 4px solid #ff6150;
+    border-right: 4px solid transparent;
     top:1px;
-    right: -5px;
+    right: -3px;
+    z-index:
   }
   
   .ribbon-1:after {
