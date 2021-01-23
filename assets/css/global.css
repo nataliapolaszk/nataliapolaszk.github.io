@@ -39,6 +39,7 @@ html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     overflow: scroll!important;
+    overflow-x:hidden!important
 }
 
 /* Main headings */
@@ -321,8 +322,8 @@ footer ul.footer-links li a, footer a.privacy-legal {
     text-align: center;
     position: relative;
     overflow: hidden;
-    background: rgb(255,222,199);
-    background: linear-gradient(39deg, rgba(255,222,199,1) 0%, rgba(255,225,205,1) 19%, rgba(255,230,213,1) 44%, rgba(255,251,248,1) 100%);
+    background: rgb(255,210,179);
+    background: linear-gradient(42deg, rgba(255,210,179,1) 0%, rgba(255,230,213,1) 100%);
     scroll-snap-align: start;
     height: 100%;
 }
@@ -498,7 +499,7 @@ footer {
     position: relative;
     text-align: center;
     color: #fff;
-    height: 95vh;
+    height: 100vh;
     scroll-snap-align: start;
     background: rgb(167,97,133);
     background: linear-gradient(180deg, rgba(167,97,133,1) 0%, rgba(201,147,175,1) 100%);
