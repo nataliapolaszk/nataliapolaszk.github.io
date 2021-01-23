@@ -1,4 +1,5 @@
 /* CSS CONTENTS */
+
 /*
 1: Website Typography
 2: Bootstrap Menus
@@ -8,7 +9,6 @@
 6: Introduction text block
 7: Contact form
 */
-
 
 /* =========== 1: WEBSITE TYPOGRAPHY ============= 
 font-family: 'Bodoni Moda', serif;
@@ -27,172 +27,264 @@ font-family: 'Dr Sugiyama', cursive;
 font-family: 'Montez', cursive;
 font-family: 'Satisfy', cursive;
 */
-html {
-    overflow:hidden}
 
-.page  {position:fixed;
-    width:100%;
-    height:100%;
+html {
+    overflow: hidden
+}
+
+.page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    overflow:scroll!important;
-        
+    overflow: scroll!important;
 }
 
 /* Main headings */
-h1 { font-family: sans-serif }
+
+h1 {
+    font-family: sans-serif
+}
 
 /* Sub-headings */
-h2 { font-family: sans-serif }
+
+h2 {
+    font-family: sans-serif
+}
 
 /* Smaller sub-headings */
-h3, h4, h5, h6 { font-family: sans-serif }
+
+h3, h4, h5, h6 {
+    font-family: sans-serif
+}
 
 /* Text */
-p, li { font-family: 'Open Sans', sans-serif;
-letter-spacing: 2px; }
+
+p, li {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
 
 /* Menus */
-#mainNav .container ul.navbar-nav li a.nav-link,
-#mainNav li.nav-item a.btn { font-family: sans-serif; }
+
+#mainNav .container ul.navbar-nav li a.nav-link, #mainNav li.nav-item a.btn {
+    font-family: sans-serif;
+}
 
 /* Footer */
-footer ul.footer-links li a,
-footer a.privacy-legal { font-family: sans-serif }
 
+footer ul.footer-links li a, footer a.privacy-legal {
+    font-family: sans-serif
+}
 
 /* =========== 2: BOOTSTRAP MENUS ============= */
 
-.sidenav { padding-top: 0; padding-bottom: 0;margin-top:20px;
-background:none;}
-.sidenav .flex-column {padding-top:40px;}
-.sidenav .icon-container {width:55px; height:55px; background-color: none; border:3px solid #fff;border-radius:7px; margin:0 auto; position:relative;
-margin-bottom:5px}
-.sidenav .icon-container img {
-    position:absolute;
-    top:7px;
-    left:7px;
-    margin-bottom: 10px; width:35x; height:35px; 
+.sidenav {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left:10px;
+    margin-top: 20px;
+    background: none;
+    mix-blend-mode: color-burn
 }
-.sidenav::before {
-    content:'';
-    height:12px;
-    width:160px;
-    position:absolute;
-    left:0px;
-    top:-2px;
-    background: rgb(254,253,253);
-    background: linear-gradient(180deg, rgba(254,253,253,0.9) 0%, rgba(255,255,255,0.9) 48%, rgba(241,231,231,0.9) 76%, rgba(207,194,194,0.9) 100%);
-    border-radius:0px 3px 3px 0px;
-}
-.navbar-brand::before {content:'';
-height: 15px;
-width: 15px;
-background: rgb(254,253,253);
-background: linear-gradient(180deg, rgba(254,253,253,0.9) 0%, rgba(255,255,255,0.9) 48%, rgba(241,231,231,0.9) 76%, rgba(207,194,194,0.9) 100%);
-border-radius: 50%;
-position:absolute; left:5px; top:-3px;
-}
-.navbar-brand{
-    position:absolute;
-    left:120px;
-    top:6px;
-    margin-left:8px
 
+
+.sidenav .flex-column {
+    padding-top: 50px;
 }
+
+.sidenav .icon-container {
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    border: 3px solid #fff;
+    border-radius: 7px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 5px
+}
+
+.sidenav .icon-container img {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.sidenav::before {
+    content: '';
+    height: 10px;
+    width: 135px;
+    position: absolute;
+    left: 10px;
+    top: -2px;
+    background: rgb(219, 219, 219);
+    border-radius: 0px 3px 3px 0px;
+}
+
+.navbar-brand::before {
+    content: '➽';
+    font-size: 19px;
+    color:rgb(219, 219, 219);
+    position: absolute;
+    left: -7px;
+    top: -12px;
+    font-weight: bold
+}
+
+.navbar-brand::after {
+    content: '➽';
+    font-size: 19px;
+    color: rgb(219, 219, 219);
+    position: absolute;
+    left: -148px;
+    top: -12px;
+    font-weight: bold;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 120px;
+    top: 6px;
+    margin-left: 8px
+}
+
 .navbar-brand h3 {
-    font-family:arial;
-    font-size:32px;
+    font-family: arial;
+    font-size: 32px;
     font-family: 'Dr Sugiyama', cursive;
-    color:#fff;
+    color: #fff;
     letter-spacing: 0px;
-    line-height:20px
-    ;
+    line-height: 20px;
 }
+
 .navbar-brand .surname {
     font-family: 'Merriweather:wght@900', serif;
- 
-    letter-spacing:0px;
-    font-size:18px;
+    letter-spacing: 0px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
 @media (min-width:768px) {
     .sidenav {
         height: 100%;
-        width: 200px; 
-        position: fixed; 
-        z-index: 100; 
-        top: 0; 
+        width: 200px;
+        position: fixed;
+        z-index: 100;
+        top: 0;
         left: 0;
     }
 }
 
-
 /* Menu options: text size and weight */
-.sidenav li.nav-item a { font-size: 11px; font-weight: bold;
-color:#fff;
-text-align:center!important;
-text-transform: uppercase; }
 
-
+.sidenav li.nav-item a {
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center!important;
+    text-transform: uppercase;
+}
 
 /* Menu options: tablets/desktops */
-@media (min-width: 1200px) { #mainNav li.nav-item { margin-left: 40px } }
+
+@media (min-width: 1200px) {
+    #mainNav li.nav-item {
+        margin-left: 40px
+    }
+}
 
 /* Menu options: mobiles */
-@media (max-width: 1199px) { #mainNav li.nav-item { margin-bottom: 20px } }
 
-
+@media (max-width: 1199px) {
+    #mainNav li.nav-item {
+        margin-bottom: 20px
+    }
+}
 
 /* ============== 3: HERO BLOCKS GENERAL ============== */
 
 /* Verically center content and default background colour */
+
 .hero-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: gray;
-    height:90vh
+    height: 90vh
 }
 
-
 /* Desktop - hero block inside spacing */
+
 @media (min-width:768px) {
-    .hero-block { padding: 8% 5% }
+    .hero-block {
+        padding: 8% 5%
+    }
 }
 
 /* Mobiles - hero inside spacing */
- @media (max-width:767px) {
-    .hero-block { margin-bottom: 40px; padding: 20% 10% }
-    .col-md-6.col-xs-12.text-right,
-    .col-md-6.col-xs-12 { text-align: center !important }
-    .col-md-6.col-xs-12:nth-child(1) { margin-bottom: 12% }
+
+@media (max-width:767px) {
+    .hero-block {
+        margin-bottom: 40px;
+        padding: 20% 10%
+    }
+    .col-md-6.col-xs-12.text-right, .col-md-6.col-xs-12 {
+        text-align: center !important
+    }
+    .col-md-6.col-xs-12:nth-child(1) {
+        margin-bottom: 12%
+    }
 }
 
 /* Center-align headings and sub-headings */
-.hero-block h1, .hero-block h2 { text-align: center }
+
+.hero-block h1, .hero-block h2 {
+    text-align: center
+}
 
 /* Set maximum width of heading snd sub-heading */
-.hero-block h1, .hero-block h2 { 
-    max-width: 80%; margin-left: auto; margin-right: auto
+
+.hero-block h1, .hero-block h2 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto
 }
 
 /* Desktop - Space beneath headings and sub-headings */
-@media (min-width:768px) { 
-    .hero-block h1 { margin-bottom: 4% } 
-    .hero-block h2 { margin-bottom: 6% } 
+
+@media (min-width:768px) {
+    .hero-block h1 {
+        margin-bottom: 4%
+    }
+    .hero-block h2 {
+        margin-bottom: 6%
+    }
 }
 
 /* Mobiles - Space beneath headings */
-@media (max-width:767px) { 
-    .hero-block h1 { margin-bottom: 8% } 
-    .hero-block h2 { margin-bottom: 14% } 
+
+@media (max-width:767px) {
+    .hero-block h1 {
+        margin-bottom: 8%
+    }
+    .hero-block h2 {
+        margin-bottom: 14%
+    }
 }
 
 /* ====== 4: HERO BLOCK WITH BACKGROUND IMAGE ======= */
 
 /* Centre background image, horizontally and vertically */
+
 .hero-7 {
     background-position: center center;
     background-size: cover;
@@ -200,7 +292,8 @@ text-transform: uppercase; }
 }
 
 /* Default font settings */
-.hero-7 h1 { 
+
+.hero-7 h1 {
     color: #fff;
     font-weight: normal;
     line-height: 1.1;
@@ -208,55 +301,68 @@ text-transform: uppercase; }
     text-shadow: 2px 2px #222;
 }
 
-.hero-7 h2 { 
+.hero-7 h2 {
     color: #fff;
     font-weight: bold;
     line-height: 1.4;
     font-size: calc(24px + (54 - 24) * ((100vw - 320px) / (1600 - 320)));
-    text-shadow: 2px 2px #222;    
+    text-shadow: 2px 2px #222;
 }
 
 /* ======= 5: HERO BLOCKS WITH BACKGROUND VIDEO ======= */
 
-.hero-10 { text-align: center; position: relative; overflow: hidden;
-    background: rgb(255,255,255);
-    background: linear-gradient(162deg, rgba(255,255,255,1) 0%, rgba(252,211,211,1) 74%, rgba(255,230,230,1) 100%);
-    scroll-snap-align: start; 
+.hero-10 {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #ffe1cb;
+    scroll-snap-align: start;
     height: 100%;
- }
+}
 
 .hero-10 .background-video-content {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .hero-11 {
-    text-align: center; position: relative; overflow: hidden;
-    scroll-snap-align: start; 
-    background-color:#ea907a!important;
-    height:100%
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: start;
+    background-color: #ea907a!important;
+    height: 100%
 }
 
-#wave1 {position:absolute;
-    left:0px;
-    bottom:-10vh;
-    width:100%!important;}
+#wave1 {
+    position: absolute;
+    left: 0px;
+    bottom: -12vh;
+    width: 100%!important;
+}
 
-#wave2, #wave3 {position:absolute;
-    left:0px;
-    bottom:-15vh;
-    width:100%!important;}
+#wave2  {
+    position: absolute;
+    left: 0px;
+    bottom: -10vh;
+    width: 100%!important;
+}
+#wave3  {
+    position: absolute;
+    left: -20px;
+    bottom: -10vh;
+    width: 120%!important;
+    transform: rotate(-3deg);
+}
 
-     #wave4{position:absolute;
-        left:0px;
-        bottom:0;
-        width:100%;}
-
-
-
+#wave4 {
+    position: absolute;
+    left: 0px;
+    bottom: -10vh;
+    width: 100%;
+}
 
 /* Optional overlay 
 .hero-10 .bg-overlay {
@@ -264,14 +370,23 @@ text-transform: uppercase; }
     background-image: linear-gradient(rgba(29,38,113,0.7),rgba(195,55,100,0.3)); 
 }*/
 
-
 /* Desktop - height */
-@media (min-width:768px) { .hero-10 .background-video-content { height: 300px } }
+
+@media (min-width:768px) {
+    .hero-10 .background-video-content {
+        height: 300px
+    }
+}
 
 /* Mobiles - height  */
-@media (max-width:767px) { .hero-10 .background-video-content { height: 380px } }
 
-.hero-10 .background-video-content h1 { 
+@media (max-width:767px) {
+    .hero-10 .background-video-content {
+        height: 380px
+    }
+}
+
+.hero-10 .background-video-content h1 {
     color: #fff;
     font-family: 'Fraunces', serif;
     font-weight: normal;
@@ -280,7 +395,7 @@ text-transform: uppercase; }
     letter-spacing: 0px;
 }
 
-.hero-10 .background-video-content h2 { 
+.hero-10 .background-video-content h2 {
     color: #fff;
     font-weight: bold;
     line-height: 1.4;
@@ -288,219 +403,267 @@ text-transform: uppercase; }
 }
 
 /* Desktop - Space beneath main heading  */
-@media (min-width:768px) { 
-    .hero-10 .background-video-content h1 { margin-bottom: 1% }
+
+@media (min-width:768px) {
+    .hero-10 .background-video-content h1 {
+        margin-bottom: 1%
+    }
 }
 
 /* Mobiles - Space beneath main heading */
-@media (max-width:767px) { 
-    .hero-10 .background-video-content h1 { margin-bottom: 8% }
+
+@media (max-width:767px) {
+    .hero-10 .background-video-content h1 {
+        margin-bottom: 8%
+    }
 }
 
 /* Desktop - button positioning  */
-@media (min-width:768px) { 
-    .hero-10 .col-md-6.col-xs-12:nth-child(1) { text-align: right }
-    .hero-10 .col-md-6.col-xs-12:nth-child(2) { text-align: left }
+
+@media (min-width:768px) {
+    .hero-10 .col-md-6.col-xs-12:nth-child(1) {
+        text-align: right
+    }
+    .hero-10 .col-md-6.col-xs-12:nth-child(2) {
+        text-align: left
+    }
 }
 
 /* ========== Introduction text block  ============*/
 
-.introduction-text { position:relative;
+.introduction-text {
+    position: relative;
     text-align: center;
-    scroll-snap-align: start; 
+    scroll-snap-align: start;
     scroll-snap-stop: always;
-height:90vh;
-background-color: #fbc687}
+    height: 100vh;
+    background-color: #fbc687
+}
 
 /* Desktop */
-@media (min-width:768px) { 
-    .introduction-text { padding: 4% 10% 5% 10% }
+
+@media (min-width:768px) {
+    .introduction-text {
+        padding: 4% 10% 5% 10%
+    }
 }
 
 /* Mobiles */
-@media  (max-width:767px) { .introduction-text { padding: 7% 7% 10% 7% } }
 
-.introduction-text p { font-size: calc(20px + (26 - 20) * ((100vw - 320px)/(1600 - 320))) }
+@media (max-width:767px) {
+    .introduction-text {
+        padding: 7% 7% 10% 7%
+    }
+}
+
+.introduction-text p {
+    font-size: calc(20px + (26 - 20) * ((100vw - 320px)/(1600 - 320)))
+}
 
 /* ================= 7: CONTACT FORM ==================*/
 
-#myform { 
+#myform {
     background-color: #f0f5f4;
     padding: 20px 30px;
-    margin-bottom: 40px;    
+    margin-bottom: 40px;
 }
 
-#myform label { font-weight: bold } 
+#myform label {
+    font-weight: bold
+}
 
-#myform button { font-size: large; padding: 6px 24px } 
+#myform button {
+    font-size: large;
+    padding: 6px 24px
+}
 
-#myform .valid-feedback, #myform .invalid-feedback { font-size: large }
-
+#myform .valid-feedback, #myform .invalid-feedback {
+    font-size: large
+}
 
 /* =============== 8: FOOTER ================== */
 
 /* Outer footer parent container */
-footer { position:relative;
-    text-align: center; 
-    color:#fff;
-    background-color:rgb(36,64,84);
-    height:100vh;
+
+footer {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 95vh;
     scroll-snap-align: start;
-    background-color:#f4f7c5;
+    background-color: #9f5f80;
 }
 
 /* Desktop footer - inside padding  */
-@media (min-width:768px) { footer { padding: 4% 8% 4% 8% } }
+
+@media (min-width:768px) {
+    footer {
+        padding: 4% 8% 4% 8%
+    }
+}
 
 /* Mobiles footer - inside padding */
-@media (max-width:767px) { footer { padding: 8% 8% 12% 8% } }
+
+@media (max-width:767px) {
+    footer {
+        padding: 8% 8% 12% 8%
+    }
+}
 
 /* Styles for footer background, text, icons and links */
 
-footer h4, footer h5, 
-footer ul.footer-icons li, footer ul.footer-icons li a, 
-footer p, footer p a {
-   color: #fff
+footer h4, footer h5, footer ul.footer-icons li, footer ul.footer-icons li a, footer p, footer p a {
+    color: #fff
 }
 
 /* Footer headings */
+
 footer h4 {
-   font-weight: normal;
-   font-size: calc(26px + (48 - 26) * ((100vw - 320px)/(1600 - 320)));
-   margin: 0 auto 16px 0;
+    font-weight: normal;
+    font-size: calc(26px + (48 - 26) * ((100vw - 320px)/(1600 - 320)));
+    margin: 0 auto 16px 0;
 }
 
 footer h5 {
     font-weight: normal;
-    font-style:  italic;
+    font-style: italic;
     color: #fff;
     margin: 0 auto 36px auto;
     font-size: calc(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
 }
 
 /* Footer text links and icon links */
-footer ul.footer-links { text-align: center }
-footer ul.footer-links { margin-left: 0 }
-footer ul.footer-links, footer ul.footer-icons { list-style-type: none }
 
-footer ul.footer-links,
-footer ul.footer-icons { margin: 0 auto 48px auto; padding-left: 0 }
+footer ul.footer-links {
+    text-align: center
+}
 
-footer ul.footer-links li,
-footer ul.footer-icons li { display: inline-block; margin: 0 32px 0 0 }
+footer ul.footer-links {
+    margin-left: 0
+}
 
-footer ul.footer-links li:last-child,
-footer ul.footer-icons li:last-child { margin-right: 0 }
+footer ul.footer-links, footer ul.footer-icons {
+    list-style-type: none
+}
+
+footer ul.footer-links, footer ul.footer-icons {
+    margin: 0 auto 48px auto;
+    padding-left: 0
+}
+
+footer ul.footer-links li, footer ul.footer-icons li {
+    display: inline-block;
+    margin: 0 32px 0 0
+}
+
+footer ul.footer-links li:last-child, footer ul.footer-icons li:last-child {
+    margin-right: 0
+}
 
 /* Footer text links */
+
 footer ul.footer-links li a {
     color: #fff;
     text-decoration: none;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    padding-bottom:2px;    
+    padding-bottom: 2px;
     font-size: calc(17px + (20 - 17) * ((100vw - 320px)/(1600 - 320)));
 }
 
-footer ul.footer-links li a:link, 
-footer ul.footer-links li a:visited  {
-   border-bottom-color: transparent;
+footer ul.footer-links li a:link, footer ul.footer-links li a:visited {
+    border-bottom-color: transparent;
 }
 
-footer ul.footer-links li a:hover, 
-footer ul.footer-links li a:active  {
-   border-bottom-color: #fff;
+footer ul.footer-links li a:hover, footer ul.footer-links li a:active {
+    border-bottom-color: #fff;
 }
 
 /* Footer icons */
+
 footer ul.footer-icons li a i {
     text-decoration: none;
     font-size: calc(22px + (28 - 22) * ((100vw - 320px)/(1600 - 320)));
 }
 
-footer ul.footer-icons li a:hover, 
-footer ul.footer-icons li a:active  { color: #fff1e5 }
+footer ul.footer-icons li a:hover, footer ul.footer-icons li a:active {
+    color: #fff1e5
+}
 
 /* Privacy and legal link */
+
 footer p a {
     text-decoration: none;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    padding-bottom:2px;  
-    color: #fff;  
+    padding-bottom: 2px;
+    color: #fff;
     font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
 }
 
-footer p a:link, 
-footer p a:visited  {
-    color:#fff;
+footer p a:link, footer p a:visited {
+    color: #fff;
     border-bottom-color: transparent;
 }
 
-footer p a:hover, 
-footer p a:active  {
-    color:#fff;
+footer p a:hover, footer p a:active {
+    color: #fff;
     border-bottom-color: #fff;
 }
 
 a.privacy-legal {
-    font-family: sans-serif;    
+    font-family: sans-serif;
     display: inline-block;
-    color:#fff;
+    color: #fff;
     text-decoration: none;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    padding-bottom:2px;    
+    padding-bottom: 2px;
     font-size: calc(14px + (17 - 14) * ((100vw - 320px)/(1600 - 320)));
 }
 
-a.privacy-legal:link,
-a.privacy-legal:visited {
+a.privacy-legal:link, a.privacy-legal:visited {
     border-bottom-color: transparent;
 }
 
-a.privacy-legal:active,
-a.privacy-legal:hover {
+a.privacy-legal:active, a.privacy-legal:hover {
     border-bottom-color: #fff
 }
-
 
 [class^="ribbon-"] {
     position: relative;
     margin-bottom: 80px;
-  }
-  
-  [class^="ribbon-"]:before, [class^="ribbon-"]:after {
+}
+
+[class^="ribbon-"]:before, [class^="ribbon-"]:after {
     content: "";
     position: absolute;
-  }
-  
-  .ribbon-1 {
+}
+
+.ribbon-1 {
     width: 120px;
     height: 480px;
-    background: #aacdbe;
+    background-color: rgb(177, 177, 177);
     top: -6px;
     left: 15px;
-    border-radius:10px 3px 0px 0px;
-    z-index:1
-  }
-  
-  .ribbon-1:before {
+    border-radius: 10px 3px 0px 0px;
+    z-index: 1
+}
+
+.ribbon-1:before {
     height: 0;
     width: 0;
-    border-bottom: 4px solid #aacdbe;
+    border-bottom: 4px solid rgba(177, 177, 177);
     border-right: 4px solid transparent;
-    top:1px;
+    top: 1px;
     right: -3px;
-  }
-  
-  .ribbon-1:after {
+}
+
+.ribbon-1:after {
     height: 0;
     width: 0;
-    border-left: 60px solid #aacdbe;
-    border-right: 60px solid #aacdbe;
+    border-left: 60px solid rgba(177, 177, 177);
+    border-right: 60px solid rgba(177, 177, 177);
     border-bottom: 60px solid transparent;
     bottom: -60px;
-    
-  }
-
+}
