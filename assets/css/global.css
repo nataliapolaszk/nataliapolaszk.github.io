@@ -87,7 +87,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
     margin-left: -2px;
     margin-top: 10px;
     background: none;
-    height:0px!important
+    height: 0px!important
 }
 
 .sidenav .flex-column {
@@ -139,7 +139,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
     top: -8px;
     font-weight: bold;
     mix-blend-mode: color-dodge;
-cursor: default;
+    cursor: default;
 }
 
 .navbar-brand::after {
@@ -222,19 +222,21 @@ cursor: default;
     content: '';
     width: 100vw!important;
     height: 100px;
-    position: absolute;;
+    position: absolute;
+    ;
     bottom: 0px;
-    margin-left:0!important;
-    z-index:100!important
+    margin-left: 0!important;
+    z-index: 100!important
 }
-
 
 /* ============== 3: HERO BLOCKS GENERAL ============== */
 
 /* Verically center content and default background colour */
+
 .container-fluid {
-    padding:0px 0px 0px 0px
+    padding: 0px 0px 0px 0px
 }
+
 .hero-block {
     display: flex;
     flex-direction: column;
@@ -245,9 +247,7 @@ cursor: default;
 
 /* Desktop - hero block inside spacing */
 
-@media (min-width:768px) {
-    
-}
+@media (min-width:768px) {}
 
 /* Mobiles - hero inside spacing */
 
@@ -334,21 +334,20 @@ cursor: default;
     text-align: center;
     position: relative;
     overflow: hidden;
-    background: rgb(255, 210, 179);
-    background: linear-gradient(42deg, rgba(255, 210, 179, 1) 0%, rgba(255, 230, 213, 1) 100%);
+background: rgb(255,195,154);
+background: linear-gradient(151deg, rgba(255,195,154,1) 0%, rgba(255,226,205,1) 100%);
     scroll-snap-align: start;
     height: 100%;
     margin: 0px 0px 0px 0px!important
 }
-
 
 .hero-11 {
     text-align: center;
     position: relative;
     overflow: hidden;
     scroll-snap-align: start;
-    background: rgb(234, 144, 122);
-    background: linear-gradient(180deg, rgba(234, 144, 122, 1) 0%, rgba(241, 171, 150, 1) 100%);
+    background: rgb(234,144,122);
+    background: linear-gradient(180deg, rgba(234,144,122,1) 0%, rgba(246,192,178,1) 100%);
     height: 100%
 }
 
@@ -357,11 +356,8 @@ cursor: default;
     left: 0px;
     width: 100vw!important;
     bottom: -10vh;
-    z-index:0;
-
+    z-index: 0;
 }
-
-
 
 /* Optional overlay 
 .hero-10 .bg-overlay {
@@ -435,20 +431,19 @@ cursor: default;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     height: 100vh;
-    background: rgb(251, 198, 135);
-    background: linear-gradient(180deg, rgba(251, 198, 135, 1) 0%, rgba(255, 217, 171, 1) 100%);
+    background: rgb(117,170,168);
+    background: linear-gradient(180deg, rgba(117,170,168,1) 0%, rgba(186,203,202,1) 100%);
 }
+
 .introduction-text .content {
-    text-align:center;
+    text-align: center;
     margin: 0% 20% 10% 20%;
-    padding-top:5%
+    padding-top: 5%
 }
 
 /* Desktop */
 
-@media (min-width:768px) {
-
-}
+@media (min-width:768px) {}
 
 /* Mobiles */
 
@@ -493,9 +488,9 @@ footer {
     color: #fff;
     height: 100vh;
     scroll-snap-align: start;
-    background: rgb(167, 97, 133);
-    background: linear-gradient(180deg, rgba(167, 97, 133, 1) 0%, rgba(201, 147, 175, 1) 100%);
-    overflow:hidden!important
+    background: #9c5579;
+    background: linear-gradient(180deg, rgba(156,85,121,1) 0%, rgba(212,164,189,1) 100%);
+    overflow: hidden!important
 }
 
 /* Desktop footer - inside padding  */
