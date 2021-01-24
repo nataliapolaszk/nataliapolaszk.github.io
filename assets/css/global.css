@@ -266,17 +266,8 @@ footer ul.footer-links li a, footer a.privacy-legal {
 
 /* Center-align headings and sub-headings */
 
-.hero-block h1, .hero-block h2 {
-    text-align: center
-}
-
 /* Set maximum width of heading snd sub-heading */
 
-.hero-block h1, .hero-block h2 {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto
-}
 
 /* Desktop - Space beneath headings and sub-headings */
 
@@ -318,6 +309,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
     line-height: 1.1;
     font-size: calc(60px + (112 - 60) * ((100vw - 320px) / (1600 - 320)));
     text-shadow: 2px 2px #222;
+    
 }
 
 .hero-7 h2 {
@@ -334,20 +326,20 @@ footer ul.footer-links li a, footer a.privacy-legal {
     text-align: center;
     position: relative;
     overflow: hidden;
-background: rgb(255,195,154);
-background: linear-gradient(151deg, rgba(255,195,154,1) 0%, rgba(255,226,205,1) 100%);
+background: #a2b8be ;
     scroll-snap-align: start;
     height: 100%;
     margin: 0px 0px 0px 0px!important
 }
+
+.header {margin-top:-8%}
 
 .hero-11 {
     text-align: center;
     position: relative;
     overflow: hidden;
     scroll-snap-align: start;
-    background: rgb(234,144,122);
-    background: linear-gradient(180deg, rgba(234,144,122,1) 0%, rgba(246,192,178,1) 100%);
+    background: #f5e1d1;
     height: 100%
 }
 
@@ -381,20 +373,26 @@ background: linear-gradient(151deg, rgba(255,195,154,1) 0%, rgba(255,226,205,1) 
     }
 }
 
-.hero-10 .background-video-content h1 {
+.hero-10  h1 {
     color: #fff;
-    font-family: 'Fraunces', serif;
+    font-family: 'Bebas Neue', cursive;
     font-weight: normal;
-    line-height: 1.4;
-    font-size: calc(48px + (100 - 48) * ((100vw - 320px) / (1600 - 320)));
+    line-height: 0.5;
+    font-size: calc(70px + (150 - 70) * ((100vw - 320px) / (1600 - 320)));
     letter-spacing: 0px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left:20%;
 }
+#name {letter-spacing: 4px;}
 
-.hero-10 .background-video-content h2 {
+.hero-10  h2 {
     color: #fff;
     font-weight: bold;
-    line-height: 1.4;
+    line-height: 1;
     font-size: calc(20px + (48 - 20) * ((100vw - 320px) / (1600 - 320)));
+    text-align: left;
+    margin-left:20%
 }
 
 /* Desktop - Space beneath main heading  */
@@ -431,8 +429,7 @@ background: linear-gradient(151deg, rgba(255,195,154,1) 0%, rgba(255,226,205,1) 
     scroll-snap-align: start;
     scroll-snap-stop: always;
     height: 100vh;
-    background: rgb(117,170,168);
-    background: linear-gradient(180deg, rgba(117,170,168,1) 0%, rgba(186,203,202,1) 100%);
+    background: #b38e96
 }
 
 .introduction-text .content {
@@ -488,8 +485,7 @@ footer {
     color: #fff;
     height: 100vh;
     scroll-snap-align: start;
-    background: #9c5579;
-    background: linear-gradient(180deg, rgba(156,85,121,1) 0%, rgba(212,164,189,1) 100%);
+    background: #c9c9c9;
     overflow: hidden!important
 }
 
@@ -633,6 +629,7 @@ a.privacy-legal:active, a.privacy-legal:hover {
     position: fixed;
     margin-bottom: 80px;
     mix-blend-mode: color-burn;
+    margin-right:20px
 }
 
 [class^="ribbon-"]:before, [class^="ribbon-"]:after {
