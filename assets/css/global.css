@@ -174,13 +174,6 @@ footer ul.footer-links li a, footer a.privacy-legal {
     line-height: 20px;
 }
 
-.navbar-brand .surname {
-    font-family: 'Merriweather:wght@900', serif;
-    letter-spacing: 0px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
 @media (min-width:768px) {
     .sidenav {
         height: 100%;
@@ -226,7 +219,6 @@ footer ul.footer-links li a, footer a.privacy-legal {
     ;
     bottom: 0px;
     margin-left: 0!important;
-    z-index: 100!important
 }
 
 /* ============== 3: HERO BLOCKS GENERAL ============== */
@@ -326,14 +318,43 @@ footer ul.footer-links li a, footer a.privacy-legal {
     text-align: center;
     position: relative;
     overflow: hidden;
-background: #a2b8be ;
+    background: #a2b8be ;
     scroll-snap-align: start;
     height: 100%;
     margin: 0px 0px 0px 0px!important
 }
 
-.header {margin-top:-8%}
+.header {display:inline-block;
+    width:100vw;
+    margin-top:5%;
+    margin-left:200px;
+left:0px}
 
+.namediv {float:left;
+text-align: left;
+margin-top:0px;
+display:inline-block;}
+
+.info {display:inline-block;
+    float:left;
+    width:calc((100% - 300px)/2);
+    top:10%;
+font-size:calc(8px + (16 - 8) * ((100vw - 320px) / (1600 - 320)));
+color:white;
+text-align:justify;
+margin-top:0px;
+margin-left:5%;
+padding-right:5%;
+height:42vh;
+overflow:scroll;
+overflow-x:auto
+}
+.dev {display:block;
+float:left;
+width:100%;
+margin-top:1%;
+}
+.dev h2 {margin-left:0px!important}
 .hero-11 {
     text-align: center;
     position: relative;
@@ -373,23 +394,21 @@ background: #a2b8be ;
     }
 }
 
-.hero-10  h1 {
+.hero-10 .namediv h1 {
     color: #fff;
     font-family: 'Bebas Neue', cursive;
     font-weight: normal;
-    line-height: 0.5;
-    font-size: calc(70px + (150 - 70) * ((100vw - 320px) / (1600 - 320)));
+    line-height:0.8;
+    font-size: calc(40px + (200 - 40) * ((100vw - 320px) / (1600 - 320)));
     letter-spacing: 0px;
     text-transform: uppercase;
     text-align: left;
-    margin-left:20%;
 }
 #name {letter-spacing: 4px;}
-
+#surname {line-height:0.6}
 .hero-10  h2 {
     color: #fff;
     font-weight: bold;
-    line-height: 1;
     font-size: calc(20px + (48 - 20) * ((100vw - 320px) / (1600 - 320)));
     text-align: left;
     margin-left:20%
