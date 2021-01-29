@@ -213,13 +213,21 @@ footer ul.footer-links li a, footer a.privacy-legal {
 
 #next1, #next2, #next3 {
     content: '';
-    width: 100vw!important;
+    width: 90%!important;
     height: 100px;
     position: absolute;
-    ;
     bottom: 0px;
-    margin-left: 0!important;
+    margin:0px 5% 0px 5%!important;
+    text-align:center;
+    padding-right:2%;
 }
+
+#next1 img, #next2 img, #next3 img {box-sizing:content-box;
+    width:50px;
+    padding: 10px 50px 0px 50px;
+    border-top: 5px solid #fff
+
+} 
 
 /* ============== 3: HERO BLOCKS GENERAL ============== */
 
@@ -344,7 +352,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
     margin-top: 0px;
     margin-left: 5%;
     padding-right: 5%;
-    height: 42vh;
+    height: 40vh;
     overflow: scroll;
     overflow-x: auto
 }
@@ -353,7 +361,8 @@ footer ul.footer-links li a, footer a.privacy-legal {
     display: block;
     float: left;
     width: 100%;
-    margin-top: 1%;
+    margin-top: 0.5%;
+    z-index:100!important
 }
 
 .dev h2 {
@@ -367,16 +376,20 @@ footer ul.footer-links li a, footer a.privacy-legal {
     scroll-snap-align: start;
     background: #f5e1d1;
     height: 100%;
-    padding-left: 200px;
 }
 
 .recent .content {
-    padding-top: 5%;
+    padding-top: 100px;
     padding-bottom: 10%;
     top: 0px;
     position: absolute;
-    width: calc(100vw - 250px)
-}
+    width: 100%;
+    padding-left: 200px;
+    padding-right:30px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
 
 .recent .content h1 {
     color: #fff;
@@ -387,11 +400,15 @@ footer ul.footer-links li a, footer a.privacy-legal {
     letter-spacing: 0px;
     text-transform: uppercase;
     text-align: left;
+    margin-bottom:15px
+}
+.recent .content a {color:#b38e96;}
+
+.recent #projects { width:100%;
+
 }
 
-.recent h1, .recent p {
-    text-align: left
-}
+
 
 .col-md-3 {
     background-color: white;
@@ -400,7 +417,8 @@ footer ul.footer-links li a, footer a.privacy-legal {
     float: left;
     margin: 0px 1% 0px 0px!important;
     box-sizing: border-box;
-    padding: 3px 3px 3px 3px!important
+    padding: 3px 3px 3px 3px!important;
+    z-index:100
 }
 
 #wave1, #wave2, #wave3, #wave4 {
@@ -408,7 +426,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
     left: 0px;
     width: 100vw!important;
     bottom: -10vh;
-    z-index: 0;
+    z-index: 0!important;
 }
 
 /* Optional overlay 
