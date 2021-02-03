@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Privacy Page</title>
-    <meta name="description" content="A sample Bootstrap-based privacy web page for use with websites that use Google Analytics">
+    <title>Natalia Polaszk | Web UI/UX Designer | Privacy Page</title>
+    <meta name="description" content="Website privacy and legal statement.">
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -13,13 +13,67 @@
     <!-- Customise Bootstrap for practical grid layouts -->
     <link rel="stylesheet" href="assets/css/bootstrap-custom.css"> 
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="assets/css/global.css">
+
+    <!-- Link to icons for Font Awesome 5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Fraunces:wght@300;400;500;700;800&family=Lora&family=Merriweather&family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Katibeh&family=Lateef&family=Merriweather:wght@900&family=Montez&family=Satisfy&family=Scheherazade:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png"/>
+
 </head>
 
 
 <body>
+    <div class="page">
 
-    <div class="container">
+     <!-- Begin navbar -->
+     <div class="ribbon-1"></div>
+        <div id="menu" class="sidenav">
+            <!-- Website logo -->
+            <a class="navbar-brand"></a>
+
+            <!-- Begin menu options -->
+
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="index.html">
+                    <img src="assets/img/home-icon.svg" alt="home">
+                    
+                    <p>Home</p>
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio/">
+                        <div class="icon-container"><img src="assets/img/book-half.svg" alt="portfolio"></div>
+                        <p>Portfolio</p>
+                    </a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="wordpress/">
+                        <div class="icon-container"><img src="assets/img/wordpress-icon.svg" alt="wordpress"></div>
+                        <p>WordPress</p>
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" href="contact/">
+                        <div class="icon-container"><img src="assets/img/contact-icon.svg" alt="contact"></div>
+                        <p>Contact</p>
+                    </a></li>
+            </ul>
+        </div>
+   <!-- End navbar -->   
+
+
+    <div class="container-fluid legal">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <h1>Privacy and Legal</h1>
@@ -118,9 +172,56 @@
             </div>
         </div>
     </div>
+    <!-- Begin footer-->
+    <footer id="footer" class="container-fluid">
 
+        <h4>Natalia Polaszk: web designer</h4>
+        <h5>Excellence in digital creation</h5>
 
- 
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio/">Portfolio</a></li>
+            <li><a href="contact/">Contact</a></li>
+        </ul>
+        
+
+        <ul class="footer-icons">
+            <li>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            
+         </ul>                
+        
+        <a class="privacy-legal" href="#">Privacy & Legal</a>
+    </footer>
+	<!-- End footer -->
+</div>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Popper JS -->
@@ -128,23 +229,5 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#000"
-    },
-    "button": {
-      "background": "#f1d600"
-    }
-  },
-  "content": {
-    "href": "https://nataliapolaszk.github.io/privacy.html"
-  }
-});
-</script>
-
-    
 </body>
 </html>

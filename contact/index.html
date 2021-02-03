@@ -17,47 +17,61 @@
     <link rel="stylesheet" href="../assets/css/global.css">
 
     <!-- Link to icons for Font Awesome 5 -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Fraunces:wght@300;400;500;700;800&family=Lora&family=Merriweather&family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Katibeh&family=Lateef&family=Merriweather:wght@900&family=Montez&family=Satisfy&family=Scheherazade:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png"/>
 
 </head>
 
 
 <body>
+    <div class="page">
     <!-- Begin navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="mainNav">
-      <div class="container">
+    <div class="ribbon-1"></div>
+        <div id="menu" class="sidenav">
+            <!-- Website logo -->
+            <a class="navbar-brand"></a>
 
-          <!-- Website logo -->
-          <a class="navbar-brand" href="../index.html">
-              <img src="../assets/img/website-logo.png" width="200" height="40"  alt="Website logo">
-          </a>
+            <!-- Begin menu options -->
 
-          <!-- Hamburger icon -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-          aria-expanded="false" 
-          aria-label="Toggle navigation"><i class="fas fa-bars"></i>
-          </button>
-
-          <!-- Begin menu options -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                 <li class="nav-item"><a class="nav-link" href="../portfolio/">Portfolio</a></li>
-                 <li class="nav-item"><a class="nav-link" href="../javascript/">JavaScript</a></li>
-                <li class="nav-item"><a class="nav-link" href="../wordpress/">WordPress</a></li>
-
-                  <!-- Call to action button-->
-                  <li class="nav-item">
-                    <a class="btn btn-primary" href="#" role="button">
-                        <i class="far fa-envelope"></i> &nbsp;&nbsp;Contact
-                    </a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="../index.html">
+                    <img src="../assets/img/home-icon.svg" alt="home">
+                    
+                    <p>Home</p>
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="../portfolio/">
+                        <div class="icon-container"><img src="../assets/img/book-half.svg" alt="portfolio"></div>
+                        <p>Portfolio</p>
+                    </a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="../wordpress/">
+                        <div class="icon-container"><img src="../assets/img/wordpress-icon.svg" alt="wordpress"></div>
+                        <p>WordPress</p>
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">
+                        <div class="icon-container"><img src="../assets/img/contact-icon.svg" alt="contact"></div>
+                        <p>Contact</p>
+                    </a></li>
+            </ul>
+        </div>
  <!-- End navbar -->
 
-    <div class="container">
+    <div class="container-fluid contact">
         <div class="row">
             <div class="col-md-8 offset-md-2">
 
@@ -145,7 +159,7 @@
         <a class="privacy-legal" href="../privacy.html">Privacy & Legal</a>
     </footer>
 	<!-- End footer -->
-
+</div>
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields

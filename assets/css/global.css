@@ -96,8 +96,8 @@ footer ul.footer-links li a, footer a.privacy-legal {
 }
 
 .sidenav .icon-container {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background-color: none;
     border: 3px solid #fff;
     border-radius: 7px;
@@ -113,8 +113,13 @@ footer ul.footer-links li a, footer a.privacy-legal {
     top: 7px;
     left: 7px;
     margin-bottom: 10px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+}
+.sidenav img[src^="assets/img/home-icon.svg"], .sidenav img[src^="../assets/img/home-icon.svg"] {
+    width:60px;
+    margin-top:-15px;
+    margin-bottom:-5px
 }
 
 .sidenav::before {
@@ -188,11 +193,17 @@ footer ul.footer-links li a, footer a.privacy-legal {
 /* Menu options: text size and weight */
 
 .sidenav li.nav-item a {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
     color: #fff;
     text-align: center!important;
     text-transform: uppercase;
+}
+
+.sidenav li.nav-item:first-child a {
+    font-size:12px!important;
+    margin-bottom:5px
+
 }
 
 /* Menu options: tablets/desktops */
@@ -295,27 +306,34 @@ footer ul.footer-links li a, footer a.privacy-legal {
 /* Centre background image, horizontally and vertically */
 
 .hero-7 {
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #a2b8be;
+    scroll-snap-align: start;
+    height: 100%;
+    margin: 0px 0px 0px 0px!important
 }
 
 /* Default font settings */
 
 .hero-7 h1 {
     color: #fff;
+    font-family: 'Bebas Neue', cursive;
     font-weight: normal;
-    line-height: 1.1;
-    font-size: calc(60px + (112 - 60) * ((100vw - 320px) / (1600 - 320)));
-    text-shadow: 2px 2px #222;
+    line-height: 0.8;
+    font-size: calc(40px + (200 - 40) * ((100vw - 320px) / (1600 - 320)));
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 .hero-7 h2 {
     color: #fff;
     font-weight: bold;
-    line-height: 1.4;
-    font-size: calc(24px + (54 - 24) * ((100vw - 320px) / (1600 - 320)));
-    text-shadow: 2px 2px #222;
+    font-size: calc(20px + (48 - 20) * ((100vw - 320px) / (1600 - 320)));
+    text-align: left;
+    margin-left: 20%
 }
 
 /* ======= 5: HERO BLOCKS WITH BACKGROUND VIDEO ======= */
@@ -329,6 +347,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
     height: 100%;
     margin: 0px 0px 0px 0px!important
 }
+
 
 .header {
     width: 100vw;
@@ -532,7 +551,15 @@ footer ul.footer-links li a, footer a.privacy-legal {
 }
 
 /* ================= 7: CONTACT FORM ==================*/
-
+.contact {
+    background: #a2b8be;
+    scroll-snap-align: start;
+    margin: 0px 0px 0px 0px!important;
+    height:100%
+}
+.contact h1, .contact h2, .contact p {
+    color:#fff
+}
 #myform {
     background-color: #f0f5f4;
     padding: 20px 30px;
@@ -552,18 +579,65 @@ footer ul.footer-links li a, footer a.privacy-legal {
     font-size: large
 }
 
+.legal {
+    position: relative;
+    background: #c9c9c9;
+    scroll-snap-align: start;
+    margin: 0px 0px 0px 0px!important;
+    
+}
+
+.legal .row {
+    margin: 0px 0px 0px 0px;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:2%
+}
+
+.legal p, .legal a, .legal li {
+    color:#383737;
+    font-size: calc(10px + (14 - 10) * ((100vw - 320px)/(1600 - 320)));
+    font-family: 'Lora', serif;
+    text-align:justify
+}
+.legal h3{
+    font-size: calc(14px + (25 - 14) * ((100vw - 320px) / (1600 - 320)));
+    color:rgb(129, 128, 128);
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    line-height: 0.8;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.legal h1 {
+    color:#fff;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    line-height: 0.8;
+    font-size: calc(40px + (150 - 40) * ((100vw - 320px) / (1600 - 320)));
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom:5%
+
+}
+
 /* =============== 8: FOOTER ================== */
 
 /* Outer footer parent container */
 
-footer {
+#footer {
     position: relative;
     text-align: center;
     color: #fff;
     height: 100vh;
     scroll-snap-align: start;
     background: #c9c9c9;
-    overflow: hidden!important
+    overflow: hidden!important;
+    padding-top:15%
 }
 
 /* Desktop footer - inside padding  */
@@ -591,17 +665,21 @@ footer h4, footer h5, footer ul.footer-icons li, footer ul.footer-icons li a, fo
 /* Footer headings */
 
 footer h4 {
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
     font-weight: normal;
-    font-size: calc(26px + (48 - 26) * ((100vw - 320px)/(1600 - 320)));
-    margin: 0 auto 16px 0;
+    line-height: 0.8;
+    font-size: calc(30px + (50 - 30) * ((100vw - 320px) / (1600 - 320)));
+    letter-spacing: 0px;
+    text-transform: uppercase;
 }
 
-footer h5 {
-    font-weight: normal;
-    font-style: italic;
+footer h2 {
+    font-weight: bold;
     color: #fff;
-    margin: 0 auto 36px auto;
-    font-size: calc(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
+    margin: -10px auto 36px auto;
+    font-size: calc(14px + (26 - 14) * ((100vw - 320px)/(1600 - 320))) !important;
+
 }
 
 /* Footer text links and icon links */
