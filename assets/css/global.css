@@ -42,6 +42,10 @@ html {
     overflow-x: hidden!important
 }
 
+.container-fluid {
+    padding: 0px 0px 0px 0px!important
+}
+
 /* Main headings */
 
 h1 {
@@ -80,6 +84,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
 }
 
 /* =========== 2: BOOTSTRAP MENUS ============= */
+
 
 .sidenav {
     padding-top: 0;
@@ -187,6 +192,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
         z-index: 100;
         top: 0;
         left: 0;
+        
     }
 }
 
@@ -198,6 +204,9 @@ footer ul.footer-links li a, footer a.privacy-legal {
     color: #fff;
     text-align: center!important;
     text-transform: uppercase;
+}
+
+
 }
 
 .sidenav li.nav-item:first-child a {
@@ -231,6 +240,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
     margin:0px 5% 0px 5%!important;
     text-align:center;
     padding-right:2%;
+    left:0px
 }
 
 #next1 img, #next2 img, #next3 img {box-sizing:content-box;
@@ -243,10 +253,6 @@ footer ul.footer-links li a, footer a.privacy-legal {
 /* ============== 3: HERO BLOCKS GENERAL ============== */
 
 /* Verically center content and default background colour */
-
-.container-fluid {
-    padding: 0px 0px 0px 0px
-}
 
 .hero-block {
     display: flex;
@@ -315,6 +321,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
     margin: 0px 0px 0px 0px!important
 }
 
+
 /* Default font settings */
 
 .hero-7 h1 {
@@ -322,10 +329,18 @@ footer ul.footer-links li a, footer a.privacy-legal {
     font-family: 'Bebas Neue', cursive;
     font-weight: normal;
     line-height: 0.8;
-    font-size: calc(40px + (200 - 40) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(40px + (150 - 40) * ((100vw - 320px) / (1600 - 320)));
     letter-spacing: 0px;
     text-transform: uppercase;
     text-align: left;
+    margin-top:3%;
+    margin-bottom:2%
+}
+
+.hero-7 .header {
+    top:0px;
+    position:absolute;
+    margin: 3% 0% 0px 0px!important
 }
 
 .hero-7 h2 {
@@ -336,6 +351,12 @@ footer ul.footer-links li a, footer a.privacy-legal {
     margin-left: 20%
 }
 
+.hero-7 p {
+    color:#fff;
+    text-align:left;
+    margin-left:1%;
+    font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320)));
+}
 /* ======= 5: HERO BLOCKS WITH BACKGROUND VIDEO ======= */
 
 .hero-10 {
@@ -352,7 +373,8 @@ footer ul.footer-links li a, footer a.privacy-legal {
 .header {
     width: 100vw;
     margin-top: 5%;
-    margin-left: 200px;
+    padding-left:200px!important;
+
 }
 
 .namediv {
@@ -395,18 +417,20 @@ footer ul.footer-links li a, footer a.privacy-legal {
     scroll-snap-align: start;
     background: #f5e1d1;
     height: 100%;
+
 }
 
 .recent .content {
-    padding-top: 100px;
     padding-bottom: 10%;
     top: 0px;
     position: absolute;
     width: 100%;
-    padding-left: 200px;
-    padding-right:30px;
         display: flex;
         flex-wrap: wrap;
+
+        padding-left:200px!important;
+        padding-right:5%;
+        margin-top:5%
       }
 
 
@@ -415,7 +439,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
     font-family: 'Bebas Neue', cursive;
     font-weight: normal;
     line-height: 0.8;
-    font-size: calc(40px + (150 - 40) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(40px + (170 - 40) * ((100vw - 320px) / (1600 - 320)));
     letter-spacing: 0px;
     text-transform: uppercase;
     text-align: left;
@@ -427,19 +451,72 @@ footer ul.footer-links li a, footer a.privacy-legal {
 
 }
 
+.portfolio, .portfolio2 {
+    top:0px;
+    position: relative;
+    background: #a2b8be;
+    scroll-snap-align: start;
+height:100%;
+overflow:hidden;
+padding-left:220px!important;
+padding-right:5%}
 
-
-.col-md-3 {
-    background-color: white;
-    border-radius: 5px;
-    ;
-    float: left;
-    margin: 0px 1% 0px 0px!important;
-    box-sizing: border-box;
-    padding: 3px 3px 3px 3px!important;
-    z-index:100
+.portfolio2 {
+    padding-top: 5%!important;
+    padding-left:220px!important;
+    padding-right:5%
 }
 
+    .portfolio h1, .portfolio2 h1 {
+        color: #fff;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: normal;
+        line-height: 0.8;
+        font-size: calc(40px + (150 - 40) * ((100vw - 320px) / (1600 - 320)));
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        text-align: left;
+        margin-top:3%;
+        margin-bottom:3%
+    }
+    .portfolio p {
+        font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1600 - 320)));
+        color:#fff
+    }
+
+.col-md-6, .col-md-4 {
+    padding: 0px 0px 4% 0px;
+    width:33%!important;
+    float:left;
+}
+
+.portfolio2 {
+    padding-top:5%
+}
+.portfolio .text {
+    margin-right:2.5%
+}
+
+.col-md-3, .col-md-6, .col-md-4 {
+    border-radius: 5px;
+    padding: 0px 2% 2% 0px;
+    float: left;
+    margin: 0px 1% 0px 0px!important;
+    z-index:100;
+
+}
+.col-md-3 img, .col-md-6 img, .col-md-4 img {
+    border:4px solid white;
+    border-radius:5px;
+    opacity:0.2
+}
+
+
+.wordpress {
+    padding-left:200px;
+    padding-right:5%;
+    padding-top:2%
+}
 #wave1, #wave2, #wave3, #wave4 {
     position: absolute;
     left: 0px;
@@ -550,6 +627,10 @@ footer ul.footer-links li a, footer a.privacy-legal {
     font-size: calc(20px + (26 - 20) * ((100vw - 320px)/(1600 - 320)))
 }
 
+
+
+
+
 /* ================= 7: CONTACT FORM ==================*/
 .contact {
     background: #a2b8be;
@@ -557,22 +638,40 @@ footer ul.footer-links li a, footer a.privacy-legal {
     margin: 0px 0px 0px 0px!important;
     height:100%
 }
-.contact h1, .contact h2, .contact p {
-    color:#fff
+.contact h1 {
+    color:#fff;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    line-height: 0.8;
+    font-size: calc(40px + (150 - 40) * ((100vw - 320px) / (1600 - 320)));
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top:3%
 }
+.contact p {
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px)/(1600 - 320)));
+    color: #fff;
+    font-weight:bold
+}
+
 #myform {
-    background-color: #f0f5f4;
+    background-color: #fff;
     padding: 20px 30px;
     margin-bottom: 40px;
+    border-radius:5px
 }
 
 #myform label {
-    font-weight: bold
+    font-weight: bold;
+    color:rgb(147, 150, 150)
 }
 
 #myform button {
     font-size: large;
-    padding: 6px 24px
+    padding: 6px 24px;
+    background-color: #8ab2bd;
+    border:none
 }
 
 #myform .valid-feedback, #myform .invalid-feedback {
@@ -639,7 +738,9 @@ footer ul.footer-links li a, footer a.privacy-legal {
     overflow: hidden!important;
     padding-top:15%
 }
-
+.last {
+    padding-top:10%
+}
 /* Desktop footer - inside padding  */
 
 @media (min-width:768px) {
