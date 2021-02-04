@@ -168,7 +168,8 @@ footer ul.footer-links li a, footer a.privacy-legal {
 
     .topnav #home {  display:none}
     
-    .contact .topnav img {
+    .contact .topnav img,
+    .wordpress .topnav img {
         position:relative;
         left:5px
     }
@@ -177,11 +178,13 @@ footer ul.footer-links li a, footer a.privacy-legal {
         position: relative;
         padding-left:20%
     }
-    .contact .flex-column {
+    .contact .flex-column,
+    .wordpress .flex-column {
         padding-left: 50%;
         margin-right:1%
         
     }
+    .wordpress .flex-column p,
     .contact .flex-column p {
         display:none
     }
@@ -438,6 +441,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
     .contact .col-md-8 {
         margin: 5% 5% 5% 5%
     }
+
 .contact h1 {
     color: #fff;
     font-family: 'Bebas Neue', cursive;
@@ -577,21 +581,30 @@ img[src^="../assets/img/lightbulb-m.svg"] {
 
 .wordpress {
     background-color: #a2b8be;
-    padding: 5% 5% 5% 5%!important;
+    padding: 0% 5% 5% 5%!important;
 
 }
-
 .wordpress h1 {
     color: #fff;
     font-family: 'Bebas Neue', cursive;
     font-weight: normal;
-    font-size: calc(80px + (150 - 80) * ((100vw - 320px) / (1600 - 320)));
+    line-height: 0.8;
+    font-size: calc(70px + (100 - 70) * ((100vw - 320px) / (1600 - 320)));
     letter-spacing: 0px;
     text-transform: uppercase;
     text-align: center;
-    line-height:0.8
+    margin-bottom: 1%;
+    margin-top:5%
 }
 
+.wordpress p {
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px)/(1600 - 320)));
+    color: #fff;
+    font-weight: bold;
+    line-height:1.2;
+    letter-spacing: 1px;
+    text-align:justify
+}
 .wordpress h3 {
     color: #fff;
     font-weight: bold;
