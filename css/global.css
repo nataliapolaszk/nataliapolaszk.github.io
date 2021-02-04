@@ -386,15 +386,39 @@ footer ul.footer-links li a, footer a.privacy-legal {
         overflow: hidden!important;
     }
     
-    footer h4 {
+    #footer-blue {
+        position: relative;
+        text-align: center;
+        color: #fff;
+        height: 40vh;
+        scroll-snap-align: start;
+        background: #a2b8be!important;
+        overflow: hidden!important;
+    }
+    
+    #footer .last {
+        padding: 50% 0px 0px 0px
+    }
+    #footer-blue .last {
+        padding: 20% 0px 0px 0px
+    }
+    
+    .last {
+        padding-top: 10%
+    }
+    footer ul.footer-icons li {
+        margin: 0 5px 0 5px!important
+    }
+
+    #footer-blue h4 {
         color: #fff;
         font-family: 'Bebas Neue', cursive;
         font-weight: normal;
         line-height: 0.8;
-        font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (1600 - 320)))!important;
+        font-size: calc(30px + (50 - 30) * ((100vw - 320px) / (1600 - 320)))!important;
         letter-spacing: 0px;
         text-transform: uppercase;
-        margin: 0 10% 5% 10%
+        margin: 0 10% 0% 10%
     }
     
     footer h2 {
@@ -403,18 +427,12 @@ footer ul.footer-links li a, footer a.privacy-legal {
         margin: -10px auto 36px auto;
         font-size: calc(14px + (26 - 14) * ((100vw - 320px)/(1600 - 320))) !important;
     }
-    .last {
-        padding-top: 25vh!important
-    }
-    footer ul.footer-icons li {
-        margin: 0 5px 0 5px!important
-    }
     
 
     .contact {
     background: #a2b8be;
     margin: 0px 0px 0px 0px!important;
-    
+    overflow-x:hidden!important;
     overflow:auto
 }
     .contact .col-md-8 {
@@ -1355,7 +1373,23 @@ img[src^="../assets/img/lightbulb-m.svg"] {
 .last {
     padding-top: 10%
 }
+footer h4 {
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    line-height: 0.8;
+    font-size: calc(50px + (50 - 50) * ((100vw - 320px) / (1600 - 320)))!important;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin: 0 10% 3% 10%
+}
 
+footer h2 {
+    font-weight: bold;
+    color: #fff;
+    margin: -10px auto 36px auto;
+    font-size: calc(14px + (26 - 14) * ((100vw - 320px)/(1600 - 320))) !important;
+}
 }
 
 /* Desktop footer - inside padding  */
