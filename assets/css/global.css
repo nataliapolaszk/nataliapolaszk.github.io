@@ -107,9 +107,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
         display:none
     }
 
-     #wave2, #wave3 {
-        display: none
-    }
+  
     #wave1 {
         position: absolute;
         left: 0px;
@@ -117,10 +115,24 @@ footer ul.footer-links li a, footer a.privacy-legal {
         z-index: 0!important;
         bottom:-5%
     }
-    #wave4 {
+    #wave2 {
         position: absolute;
         left: 0px;
         height:30%;
+        z-index: 0!important;
+        bottom:-5%
+    }
+    #wave3 {
+        position: absolute;
+        left: 0px;
+        height:20%;
+        z-index: 0!important;
+        bottom:0%
+    }
+    #wave4 {
+        position: absolute;
+        left: 0px;
+        height:20%;
         z-index: 0!important;
         bottom:0px
     }
@@ -264,6 +276,13 @@ footer ul.footer-links li a, footer a.privacy-legal {
         background: #f5e1d1;
         height: 100%;
     }
+
+    .recent #extra {
+        color:#b38e96;
+        font-size: calc(16px + (16 - 16) * ((100vw - 320px) / (1600 - 320)));
+        text-align:justify;
+        margin-top:5%
+    }
     .recent .content-m {
         top: 0px;
         position: absolute;
@@ -272,7 +291,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
         margin: 5% 5% 5% 5%;
     }
     .recent .col-centered {
-        width:70%;
+        width:30vh;
         float: none;
         margin: 0 auto;
         margin-bottom:4%
@@ -287,11 +306,12 @@ footer ul.footer-links li a, footer a.privacy-legal {
         font-family: 'Bebas Neue', cursive;
         font-weight: normal;
         line-height: 0.8;
-        font-size: calc(80px + (100 - 80) * ((100vw - 320px) / (1600 - 320)));
+        font-size: calc(70px + (100 - 70) * ((100vw - 320px) / (1600 - 320)));
         letter-spacing: 0px;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 7%
+        margin-bottom: 7%;
+        margin-top:2%
     }
     .recent .content-m a {
         color: #b38e96;
@@ -307,7 +327,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
         background: #b38e96;
     }
     .about .content {
-        padding: 5% 5% 5% 5%;
+        padding: 5% 5% 5% 7%;
     }
     .about .col-md-4 {
         width: 90%!important;
@@ -323,6 +343,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 10%;
+        margin-top:10%
     }
     .about p {
         font-size: calc(12px + (18 - 12) * ((100vw - 320px)/(1600 - 320)));
@@ -514,7 +535,7 @@ footer ul.footer-links li a, footer a.privacy-legal {
     margin: 0 5% 5% 5%!important
 
 }
-img[src^="../assets/img/lightbulb.svg"] {
+img[src^="../assets/img/lightbulb-m.svg"] {
     height: 80px;
     float: left;
     margin-right: 1%;
@@ -532,28 +553,26 @@ img[src^="../assets/img/lightbulb.svg"] {
 
 .wordpress {
     background-color: #a2b8be;
-    padding-left: 200px!important;
-    padding-bottom: 10%!important;
-    padding-right: 4%!important;
-    padding-top: 0px!important;
-    scroll-snap-align: start;
+    padding: 5% 5% 5% 5%!important;
+
 }
 
 .wordpress h1 {
     color: #fff;
     font-family: 'Bebas Neue', cursive;
     font-weight: normal;
-    font-size: calc(40px + (150 - 40) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(80px + (150 - 80) * ((100vw - 320px) / (1600 - 320)));
     letter-spacing: 0px;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
+    line-height:0.8
 }
 
 .wordpress h3 {
     color: #fff;
     font-weight: bold;
-    font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1600 - 320)));
-    text-align: left;
+    font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1600 - 320)));
+    text-align: justify;
     margin-top: -2%;
     margin-bottom: 3%
 }
@@ -892,6 +911,7 @@ margin-top:3px}
     .dev h2 {
         margin-left: 0px!important
     }
+
     .recent {
         text-align: center;
         position: relative;
@@ -920,19 +940,37 @@ margin-top:3px}
         letter-spacing: 0px;
         text-transform: uppercase;
         text-align: left;
-        margin-bottom: 15px
+        margin-bottom: 3%
     }
 
     #bulb-m {
         display:none
     }
- 
+
+    .recent #bulb {
+        text-align: left;
+        border-radius:5px;
+        box-sizing: border-box;
+        margin: 2% 5% 5% -2%!important
+    
+    }
     img[src^="assets/img/lightbulb.svg"] {
         height: 100px;
         float: left;
         margin-right: 1%;
-        margin-top: -2%
+        margin-top: 2%;
+        position:relative;
+        top:-30px!important
     }
+    .recent #bulb p {
+        color: #b38e96;
+        font-weight: normal;
+        font-size: calc(11px + (22 - 11) * ((100vw - 320px) / (1600 - 320)));
+        display: inline;
+        line-height: 1.5!important;
+        text-align: justify!important;
+    }
+    
     .recent p {
         color: #b38e96;
         font-weight: normal;
