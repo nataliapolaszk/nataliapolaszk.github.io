@@ -26,18 +26,12 @@
         crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Fraunces:wght@300;400;500;700;800&family=Lora&family=Merriweather&family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&display=swap"
-        rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Katibeh&family=Lateef&family=Merriweather:wght@900&family=Montez&family=Satisfy&family=Scheherazade:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png"/>
+
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
 
 </head>
 
@@ -55,15 +49,15 @@
 
             <ul class="nav flex-column">
                 <li class="nav-item"><a class="nav-link" href="index.html">
-                    <img src="assets/img/home-icon.svg" alt="home">
-                    
-                    <p>Home</p>
-                </a></li>
+                        <img src="assets/img/home-icon.svg" alt="home">
+
+                        <p id="home1">Home</p>
+                    </a></li>
                 <li class="nav-item"><a class="nav-link" href="portfolio/">
                         <div class="icon-container"><img src="assets/img/book-half.svg" alt="portfolio"></div>
                         <p>Portfolio</p>
                     </a></li>
-                
+
                 <li class="nav-item"><a class="nav-link" href="wordpress/">
                         <div class="icon-container"><img src="assets/img/wordpress-icon.svg" alt="wordpress"></div>
                         <p>WordPress</p>
@@ -84,11 +78,40 @@
         <!-- End navbar -->
 
         <div id="hero" class="container-fluid hero-10">
+
+            <div class="topnav">
+                <!-- Website logo -->
+                <a class="navbar-brand"></a>
+
+                <!-- Begin menu options -->
+
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">
+                            <img src="assets/img/home-icon.svg" alt="home">
+
+                            <p id="home">Home</p>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio/">
+                            <div class="icon-container"><img src="assets/img/book-half.svg" alt="portfolio"></div>
+                            <p>Portfolio</p>
+                        </a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="wordpress/">
+                            <div class="icon-container"><img src="assets/img/wordpress-icon.svg" alt="wordpress"></div>
+                            <p>WordPress</p>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact/">
+                            <div class="icon-container"><img src="assets/img/contact-icon.svg" alt="contact"></div>
+                            <p>Contact</p>
+                        </a></li>
+                </ul>
+            </div>
+
             <!-- Hero block content --->
-            <div class="header">
+            <div class="d-header">
                 <div class="namediv">
-                    <h1 id="name">Natalia</h1>
-                    <h1 id="surname">Polaszk</h1>
+                    <h1 class="name">Natalia</h1>
+                    <h1 class="surname">Polaszk</h1>
                 </div>
 
                 <div class="info">
@@ -104,6 +127,26 @@
                     <h2>Web UI/UX Designer / Google wizard</h2>
                 </div>
             </div>
+
+            <div class="m-header">
+                <div class="namediv-m">
+                    <h1 class="name">Natalia</h1>
+                    <h1 class="surname">Polaszk</h1>
+                </div>
+
+                <div class="dev-m">
+                    <h2>Web UI/UX Designer / Google wizard</h2>
+                </div>
+                <div class="info-m">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Felis donec et odio pellentesque diam volutpat commodo. Egestas
+                        integer eget aliquet nibh praesent tristique magna. Amet nulla facilisi morbi tempus iaculis.
+                        Tristique magna sit amet purus gravida quis blandit turpis. <br> <br>
+
+                        Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Non blandit massa enim nec dui
+                        nunc. Vel risus commodo viverra maecenas accumsan lacus. </p>
+                </div>
+            </div>
         </div>
 
         <img src="assets/img/wave1.svg" id="wave1">
@@ -112,13 +155,34 @@
         <div id="recent" class="container-fluid recent">
             <div class="content">
 
-                <div id="projects"><h1>Favourite projects</h1></div>
+                <div id="projects">
+                    <h1>Favourite projects</h1>
+                </div>
 
                 <div class="col-md-4"><img src="assets/img/7.jpg" class="img-fluid"></div>
                 <div class="col-md-4"><img src="assets/img/7.jpg" class="img-fluid"></div>
                 <div class="col-md-4"><img src="assets/img/7.jpg" class="img-fluid"></div>
 
-                <img src="assets/img/lightbulb.svg"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod inventore id fugiat, odio, eius nobis facere doloremque laborum cumque autem, eaque nihil libero illo expedita. Dolorum aliquam eum molestias dolore.</span>
+                <div id="bulb"><img src="assets/img/lightbulb.svg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod inventore id fugiat, odio, eius
+                        nobis facere doloremque laborum cumque autem, eaque nihil libero illo expedita. Dolorum aliquam
+                        eum molestias dolore.</p>
+                </div>
+            </div>
+            <div class="content-m">
+
+                <div id="projects-m">
+                    <h1>Favourite projects</h1>
+                </div>
+
+                <div class="col-centered"><img src="assets/img/7.jpg" class="img-fluid"></div>
+                <div class="col-centered"><img src="assets/img/7.jpg" class="img-fluid"></div>
+
+                
+            </div>
+            <div id="bulb-m"><img src="assets/img/lightbulb.svg">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod inventore id fugiat, odio, eius
+                    nobis facere doloremque laborum cumque autem, eaque nihil libero illo expedita. </p>
             </div>
 
             <img src="assets/img/wave2.svg" id="wave2">
@@ -127,14 +191,27 @@
 
         <div id="intro" class="container-fluid about">
             <div class="content">
-            <h1>Why me?</h1>
-            <div class="row">
-            <div class="col-md-4"><h2>Etiam viverra</h2><p>Vivamus et elementum sem. Nunc urna urna, posuere vitae tortor in, ullamcorper consequat tellus.</p>
-                <img src="assets/img/5.jpg" class="img-fluid"> </div>
-            <div class="col-md-4"><p>Aenean vitae nibh eget tellus lobortis elementum vitae eu enim. Aenean vulputate non ipsum et facilisis. Nullam a mauris velit. Nulla nisl est, auctor ut consectetur ac, vulputate vel augue. Sed vitae ipsum eget purus ullamcorper efficitur a eget turpis. Suspendisse a luctus turpis. Pellentesque bibendum auctor est at pulvinar. Suspendisse sed arcu placerat, porttitor neque nec, laoreet urna.</p></div>
-            <div class="col-md-4"><img src="assets/img/6.jpg" class="img-fluid"><p>Maecenas semper, orci molestie aliquam pharetra, purus felis eleifend massa, eu elementum leo augue eget neque.</p></div>
+                <h1>Why me?</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Etiam viverra</h2>
+                        <p>Vivamus et elementum sem. Nunc urna urna, posuere vitae tortor in, ullamcorper consequat
+                            tellus.</p>
+                        <img src="assets/img/7.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Aenean vitae nibh eget tellus lobortis elementum vitae eu enim. Aenean vulputate non ipsum et
+                            facilisis. Nullam a mauris velit. Nulla nisl est, auctor ut consectetur ac, vulputate vel
+                            augue. Sed vitae ipsum eget purus ullamcorper efficitur a eget turpis. Suspendisse a luctus
+                            turpis. Pellentesque bibendum auctor est at pulvinar. Suspendisse sed arcu placerat,
+                            porttitor neque nec, laoreet urna.</p>
+                    </div>
+                    <div class="col-md-4"><img src="assets/img/6.jpg" class="img-fluid">
+                        <p>Maecenas semper, orci molestie aliquam pharetra, purus felis eleifend massa, eu elementum leo
+                            augue eget neque.</p>
+                    </div>
+                </div>
             </div>
-        </div>
 
             <img src="assets/img/wave3.svg" id="wave3">
             <a id="next3" href="#footer"><img src="assets/img/arrow.svg"></a>
@@ -143,10 +220,10 @@
         <!-- Begin footer-->
         <footer id="footer" class="container-fluid">
             <div class="last">
-            <h4>Natalia Polaszk: web designer</h4>
-            <h2>Excellence in digital creation</h2>
+                <h4>Natalia Polaszk: web designer</h4>
+                <h2>Excellence in digital creation</h2>
             </div>
-           
+
 
 
             <ul class="footer-icons">
