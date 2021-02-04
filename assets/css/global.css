@@ -697,8 +697,8 @@ img[src^="../assets/img/lightbulb-m.svg"] {
     }
     .sidenav img[src^="assets/img/home-icon.svg"], .sidenav img[src^="../assets/img/home-icon.svg"] {
         width: 60px;
-        margin-top: -15px;
-        margin-bottom: -5px;
+        margin-top: -10px;
+        margin-bottom: 25px;
     }
 
 
