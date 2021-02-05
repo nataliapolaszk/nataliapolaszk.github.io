@@ -798,7 +798,7 @@ img[src^="../assets/img/lightbulb-m.svg"] {
 
 .sidenav li.nav-item #home1 {
     display:none}
-    
+
 
 /* Menu options: tablets/desktops */
 
@@ -893,6 +893,15 @@ img[src^="../assets/img/lightbulb-m.svg"] {
         z-index: 0!important;
     }
     #wave2, #wave3 {        bottom: -15vh!important}
+
+    #footer-blue #wave-f {
+        position: absolute;
+        left: 0px;
+        width: 100vw!important;
+        bottom: 0vh;
+        z-index: 0!important;
+    }
+    
     .hero-7 {
         text-align: center;
         position: relative;
@@ -1055,11 +1064,10 @@ img[src^="../assets/img/lightbulb-m.svg"] {
     top: 0px;
     position: relative;
     background: #a2b8be;
-    scroll-snap-align: start;
-    height: 100%;
     overflow: hidden;
     padding-left: 220px!important;
-    padding-right: 5%
+    padding-right: 5%;
+
 }
 
 .portfolio2 {
@@ -1129,7 +1137,6 @@ img[src^="../assets/img/lightbulb-m.svg"] {
     padding-bottom: 10%!important;
     padding-right: 4%!important;
     padding-top: 0px!important;
-    scroll-snap-align: start;
 }
 
 .wordpress h1 {
@@ -1415,22 +1422,95 @@ footer h4, footer h5, footer ul.footer-icons li, footer ul.footer-icons li a, fo
 
 /* Footer headings */
 
+#footer {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 100vh;
+    scroll-snap-align: start;
+    background: #a5bdb6;
+    overflow: hidden!important;
+}
+
+#footer-blue {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: #a2b8be!important;
+    overflow: hidden!important;
+    padding-bottom:2%!important
+}
+
+
+
+
+#footer .last {
+    padding: 13% 0px 0px 0px
+}
+#footer-blue .last {
+    padding: 10% 0px 0px 0px
+}
+
+
+footer ul.footer-icons li {
+    margin: 0 5px 0 5px!important;
+    position:relative;
+    z-index:100
+}
+
+#footer-blue h5 {
+    font-weight: bold;
+    color: #fff;
+    margin: -1% auto 3% auto;
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px)/(1600 - 320))) !important;
+    position:relative;
+    z-index:100
+}
+
+#footer-blue h4 {
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    line-height: 0.8;
+    font-size: calc(26px + (50 - 26) * ((100vw - 320px) / (1600 - 320)))!important;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin: 0 10% 1% 10%;
+    position:relative;
+    z-index:100
+}
+#footer .privacy-legal {    
+    color:#fff;
+    font-size: calc(10px + (17 - 10) * ((100vw - 320px)/(1600 - 320))) !important;}
+
+#footer-blue .privacy-legal {
+    position:relative;
+z-index:100;
+color:#fff;
+font-size: calc(10px + (17 - 10) * ((100vw - 320px)/(1600 - 320))) !important;
+font-weight:bold
+}
+#footer ul.footer-icons,
+#footer-blue ul.footer-icons {
+    margin:0 0 2% 0 !important
+}
+footer h2 {
+    font-weight: bold;
+    color: #fff;
+    margin: 0 auto 2% auto;
+    font-size: calc(14px + (26 - 14) * ((100vw - 320px)/(1600 - 320))) !important;
+}
 footer h4 {
     color: #fff;
     font-family: 'Bebas Neue', cursive;
     font-weight: normal;
     line-height: 0.8;
-    font-size: calc(30px + (50 - 30) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(50px + (70 - 50) * ((100vw - 320px) / (1600 - 320)))!important;
     letter-spacing: 0px;
     text-transform: uppercase;
+    margin: 0 10% 0% 10%
 }
 
-footer h2 {
-    font-weight: bold;
-    color: #fff;
-    margin: -10px auto 36px auto;
-    font-size: calc(14px + (26 - 14) * ((100vw - 320px)/(1600 - 320))) !important;
-}
 
 /* Footer text links and icon links */
 
@@ -1483,11 +1563,11 @@ footer ul.footer-links li a:hover, footer ul.footer-links li a:active {
 
 footer ul.footer-icons li a i {
     text-decoration: none;
-    font-size: calc(22px + (28 - 22) * ((100vw - 320px)/(1600 - 320)));
+    font-size: calc(22px + (60 - 22) * ((100vw - 320px)/(1600 - 320)));
 }
 
 footer ul.footer-icons li a:hover, footer ul.footer-icons li a:active {
-    color: #fff1e5
+    color: #f7ede5
 }
 
 /* Privacy and legal link */
@@ -1514,7 +1594,6 @@ footer p a:hover, footer p a:active {
 a.privacy-legal {
     font-family: sans-serif;
     display: inline-block;
-    color: #fff;
     text-decoration: none;
     border-bottom-style: solid;
     border-bottom-width: 2px;
